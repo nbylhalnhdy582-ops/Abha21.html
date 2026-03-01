@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇸🇦السعوديه بعيون التقنية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- صفحة البداية -->
+<div id="startScreen">
+  <h1 class="start-title">أبها 🌄</h1>
+  <button id="welcomeBtn">هلا فيك في ابها البهية✨</button>
+</div>
+
+<!-- صفحة الترحيب -->
+<div id="welcomeScreen" class="screen">
+  <h1>مرحبًا بك في أبها! 🌄</h1>
+  <p class="intro-line">أبها، بهية على طول السنة 🌸</p>
+  <p class="intro-line">أبها، قلب الجمال السعودي 💚</p>
+  <p>عروس الجبل ومدينة الضباب، حيث يلتقي جمال الطبيعة بروعة الأجواء، وتتناغم الخضرة مع نسيمها العليل. أهلاً بكم في أبها… حيث الجمال يبدأ ولا ينتهي</p>
+  <button id="startTourBtn">ابدأ جولتك في أبها ✨</button>
+</div>
+
+<!-- المحتوى الرئيسي -->
+<div id="mainContent" style="display:none;">
+  <nav>
+    <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    <ul class="nav-list">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#places">الأماكن</a></li>
+      <li><a href="#parks">المنتزهات</a></li>
+      <li><a href="#newsTable">الأخبار والفعاليات</a></li>
+      <li><a href="#footer">حقوق ونشر</a></li>
+    </ul>
+  </nav>
+
+  <!-- الرئيسية -->
+  <section id="home">
+    <h1 id="main-title">السعودية بعيون التقنية 🇸🇦</h1>
+    <h1 id="title">أبها 🇸🇦</h1>
+    <h2>أجمل مدن الجنوب</h2>
+    <p class="intro"><span class="highlight">أبها</span> مدينة رائعة تقع في منطقة عسير جنوب المملكة العربية السعودية، وتشتهر بمناخها المعتدل وطبيعتها الجبلية الساحرة.</p>
+  </section>
+
+  <!-- الأماكن -->
+  <section id="places">
+    <p class="highlight-text">أبها تضم العديد من الأماكن السياحية مثل:</p>
+    <ul>
+      <li>جبل السودة 🌄</li>
+      <li>منتزه عسير الوطني 🌳</li>
+      <li>السوق الشعبي 🛍️</li>
+      <li>المطلات الجبلية ⛰</li>
+    </ul>
+    <div class="images-container">
+      <div class="image-box">
+        <img src="pn.jpeg.JPG" alt="جبل السودة">
+        <p>جبل السودة</p>
+      </div>
+      <div class="image-box">
+        <img src="pn1.jpeg.JPG" alt="السوق الشعبي">
+        <p>السوق الشعبي</p>
+      </div>
+      <div class="image-box">
+        <img src="pn2.jpeg.JPG" alt="المطلات الجبلية">
+        <p>المطلات الجبلية</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- المنتزهات -->
+  <section id="parks">
+    <h3>المنتزهات</h3>
+    <ul>
+      <li>منتزه عسير الوطني🌲</li>
+      <li>شارع الفن🎨</li>
+      <li>منتزه جبل السودة⛰️</li>
+      <li>منتزه ابو خيال🌌</li>
+    </ul>
+  </section>
+
+  <!-- الأخبار -->
+  <section id="newsTable">
+    <h2>اخبار وفعاليات ابها:</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>الخبر</th>
+          <th>الوصف المختصر</th>
+          <th>رابط التفاصيل</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>فعاليات صيف أبها 🌄</td>
+          <td>أنشطة ثقافية وترفيهية لجميع الأعمار.</td>
+          <td><a href="#" class="show-news" data-target="news1">عرض التفاصيل</a></td>
+        </tr>
+        <tr>
+          <td>مشروع تطوير المنتزهات 🌳</td>
+          <td>تحسين المنتزهات وتوفير مرافق حديثة.</td>
+          <td><a href="#" class="show-news" data-target="news2">عرض التفاصيل</a></td>
+        </tr>
+        <tr>
+          <td>مبادرات وطنية 💚</td>
+          <td>برامج تعليمية وثقافية لتعزيز الجانب الوطني.</td>
+          <td><a href="#" class="show-news" data-target="news3">عرض التفاصيل</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- تفاصيل الأخبار -->
+  <section id="newsDetails">
+    <div class="news-item" id="news1">
+      <h3>فعاليات صيف أبها 🌄</h3>
+      <img src="r.jpeg.JPG" alt="فعاليات صيف أبها">
+      <p>تستضيف أبها فعاليات موسمية مليئة بالأنشطة الثقافية والطبيعية، مع عروض فنية ومعارض محلية تناسب جميع الأعمار.</p>
+      <button class="back-to-table">عودة للجدول ⬆️</button>
+    </div>
+    <div class="news-item" id="news2">
+      <h3>مشروع تطوير المنتزهات 🌳</h3>
+      <img src="r2.jpeg.JPG" alt="تطوير المنتزهات">
+      <p>يهدف المشروع إلى تحسين المنتزهات في أبها لتعزيز السياحة والبيئة الطبيعية، مع توفير مرافق حديثة ومساحات خضراء ممتعة لجميع الزوار.</p>
+      <button class="back-to-table">عودة للجدول ⬆️</button>
+    </div>
+    <div class="news-item" id="news3">
+      <h3>مبادرات وطنية 💚</h3>
+      <img src="r3.jpeg.PNG" alt="مبادرات وطنية">
+      <p>برامج ومبادرات تهدف لتعزيز الجانب الوطني والثقافي في أبها، مع تنظيم فعاليات تعليمية وترفيهية تساهم في رفع مستوى الوعي لدى المجتمع.</p>
+      <button class="back-to-table">عودة للجدول ⬆️</button>
+    </div>
+  </section>
+
+  <!-- تذييل الحقوق -->
+  <footer class="main-footer" id="footer">
+    <p>حقوق ونشر | إعداد الطالبة: نبيلة النهدي | المجموعة:الباحه وعسير🌺</p>
+  </footer>
+
+</div>
+
+<!-- زر العودة للرئيسية -->
+<button id="backToTop">العوده للقائمة ⬆️</button>
+
+<script src="script.js"></script>
+</body>
+</html>
